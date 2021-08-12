@@ -1,7 +1,7 @@
 import requests
 
 
-def first_qestion():
+def first_question():
     response = requests.get("https://my-json-server.typicode.com/typicode/demo/posts")
     data = response.json()
     datacomment = (requests.get("https://my-json-server.typicode.com/typicode/demo/comments")).json()
@@ -28,7 +28,7 @@ def countPerson(data):
 
 
     
-def second_qestion():
+def second_question():
     i = 1;
     count = 0;
     s = "https://reqres.in/api/users?page="
@@ -41,9 +41,9 @@ def second_qestion():
         i = i+1;
     print("total no of person are ",count)
 
-first_qestion()
+first_question()
 print("First Question Complted\n")
-second_qestion()
+second_question()
 
 
         
